@@ -37,19 +37,19 @@
 
         <div class="stat-grid">
             <div class="stat-card">
-                <div class="stat-value">42</div>
+                <div class="stat-value" id="stat-employees">0</div>
                 <div class="stat-label">Total Employees</div>
             </div>
             <div class="stat-card">
-                <div class="stat-value">5</div>
+                <div class="stat-value" id="stat-departments">0</div>
                 <div class="stat-label">Departments</div>
             </div>
             <div class="stat-card">
-                <div class="stat-value">&#8358;6,850,000.00</div>
+                <div class="stat-value" id="stat-gross">&#8358;0.00</div>
                 <div class="stat-label">Gross Payroll (August)</div>
             </div>
             <div class="stat-card">
-                <div class="stat-value">&#8358;5,620,000.00</div>
+                <div class="stat-value" id="stat-net">&#8358;0.00</div>
                 <div class="stat-label">Net Payroll (August)</div>
             </div>
         </div>
@@ -67,15 +67,15 @@
                     <tbody>
                         <tr>
                             <td>Total Gross Salary</td>
-                            <td class="align-right">&#8358;6,850,000.00</td>
+                            <td class="align-right" id="summary-gross">&#8358;0.00</td>
                         </tr>
                         <tr>
                             <td>Total Deductions</td>
-                            <td class="align-right">&#8358;1,230,000.00</td>
+                            <td class="align-right" id="summary-ded">&#8358;0.00</td>
                         </tr>
                         <tr class="total-row">
-                            <td>Net Payroll (42 staff)</td>
-                            <td class="align-right">&#8358;5,620,000.00</td>
+                            <td>Net Payroll</td>
+                            <td class="align-right" id="summary-net">&#8358;0.00</td>
                         </tr>
                     </tbody>
                 </table>
@@ -91,13 +91,7 @@
                             <th>Department</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr><td>STF042</td><td>Grace Adeyemi</td><td>Human Resources</td></tr>
-                        <tr><td>STF041</td><td>Daniel Okafor</td><td>Information Technology</td></tr>
-                        <tr><td>STF040</td><td>Blessing Eze</td><td>Finance</td></tr>
-                        <tr><td>STF039</td><td>Ibrahim Musa</td><td>Operations</td></tr>
-                        <tr><td>STF038</td><td>Chioma Nwosu</td><td>Administration</td></tr>
-                    </tbody>
+                    <tbody id="recent-tbody"></tbody>
                 </table>
             </div>
         </div>

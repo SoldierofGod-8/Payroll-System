@@ -38,27 +38,25 @@
         <div class="card form-card">
             <h3>Add New Department</h3>
             <form class="inline-form" onsubmit="return false;">
-                <input type="text" placeholder="Department name" required>
-                <button type="submit" class="btn btn-primary">Add Department</button>
+                <input type="text" id="dept-input" placeholder="Department name" required>
+                <button type="button" class="btn btn-primary" id="btn-add-dept">Add Department</button>
             </form>
         </div>
 
         <div class="card">
+            <div class="card-header">
+                <h3>Departments (<span id="department-count">0</span>)</h3>
+            </div>
             <table class="data-table">
                 <thead>
                     <tr>
                         <th>#</th>
                         <th>Department</th>
                         <th class="align-center">Staff Count</th>
+                        <th class="no-print">Actions</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr><td>1</td><td>Administration</td><td class="align-center">6</td></tr>
-                    <tr><td>2</td><td>Finance</td><td class="align-center">8</td></tr>
-                    <tr><td>3</td><td>Human Resources</td><td class="align-center">7</td></tr>
-                    <tr><td>4</td><td>Information Technology</td><td class="align-center">14</td></tr>
-                    <tr><td>5</td><td>Operations</td><td class="align-center">7</td></tr>
-                </tbody>
+                <tbody id="department-tbody"></tbody>
             </table>
         </div>
     </main>

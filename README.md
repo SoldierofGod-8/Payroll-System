@@ -12,6 +12,8 @@ A static preview of the application interface is hosted on GitHub Pages:
 
 Demo credentials (login page): `admin` / `admin123`
 
+The demo is interactive: you can add, edit and delete employees, add and delete departments, and search records — changes are saved in your browser (localStorage).
+
 > GitHub Pages only serves static files, so this is a UI preview. The full **PHP + MySQL** system runs locally with XAMPP (see Installation below) or any PHP-capable web host.
 
 ## Features
