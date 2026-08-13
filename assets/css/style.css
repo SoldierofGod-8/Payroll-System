@@ -1,0 +1,688 @@
+:root {
+    --primary: #1e4f8a;
+    --primary-dark: #163a63;
+    --primary-light: #eaf1fa;
+    --success: #1e8a4c;
+    --danger: #c0392b;
+    --text: #22303c;
+    --text-light: #5b6b7c;
+    --border: #dce3ea;
+    --bg: #f2f5f8;
+    --card: #ffffff;
+    --radius: 8px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+h1.page-title {
+    margin: 0 0 18px;
+    font-size: 24px;
+    color: var(--primary-dark);
+}
+
+h2 { font-size: 20px; }
+h3 { font-size: 16px; }
+
+/* ---------- Top bar ---------- */
+.topbar {
+    background: var(--primary-dark);
+    color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.topbar-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 14px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.brand {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+}
+
+.user-box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.user-name {
+    font-size: 14px;
+    opacity: 0.92;
+}
+
+/* ---------- Navbar ---------- */
+.navbar {
+    background: var(--primary);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+    padding: 0 12px;
+}
+
+.navbar a {
+    color: #fff;
+    padding: 12px 16px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.navbar a:hover {
+    background: rgba(255, 255, 255, 0.12);
+}
+
+.navbar a.active {
+    background: #fff;
+    color: var(--primary);
+    border-radius: 6px 6px 0 0;
+}
+
+/* ---------- Layout ---------- */
+.container {
+    max-width: 1200px;
+    margin: 24px auto;
+    padding: 0 20px;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 900px) {
+    .grid-2 { grid-template-columns: 1fr; }
+}
+
+/* ---------- Cards ---------- */
+.card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 14px;
+    flex-wrap: wrap;
+}
+
+.card h3 {
+    color: var(--primary-dark);
+}
+
+.form-card { max-width: 860px; }
+.form-card h3 { margin-bottom: 12px; }
+
+.welcome-card {
+    background: var(--primary-light);
+    border-left: 5px solid var(--primary);
+}
+
+.welcome-card ol { margin: 10px 0 0 20px; }
+.welcome-card li { margin: 4px 0; }
+
+/* ---------- Stats ---------- */
+.stat-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 900px) {
+    .stat-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+.stat-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-left: 5px solid var(--primary);
+    border-radius: var(--radius);
+    padding: 18px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.stat-value {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.stat-label {
+    font-size: 13px;
+    color: var(--text-light);
+    margin-top: 4px;
+}
+
+/* ---------- Tables ---------- */
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.data-table th,
+.data-table td {
+    border: 1px solid var(--border);
+    padding: 10px 12px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.data-table th {
+    background: var(--primary-light);
+    color: var(--primary-dark);
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.data-table tbody tr:nth-child(even) {
+    background: #fafcfe;
+}
+
+.data-table tbody tr:hover {
+    background: #f0f6fd;
+}
+
+.data-table .total-row {
+    background: var(--primary-light) !important;
+    font-weight: 700;
+}
+
+.data-table .empty {
+    text-align: center;
+    color: var(--text-light);
+    padding: 24px;
+}
+
+.align-right { text-align: right !important; }
+.align-center { text-align: center !important; }
+
+td.actions {
+    white-space: nowrap;
+    min-width: 120px;
+}
+
+td.actions form {
+    display: inline-block;
+    margin: 2px 0;
+    vertical-align: middle;
+}
+
+/* ---------- Forms ---------- */
+input[type="text"],
+input[type="password"],
+input[type="number"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 9px 12px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    font-size: 14px;
+    font-family: inherit;
+    background: #fff;
+    color: var(--text);
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(30, 79, 138, 0.12);
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    font-size: 13px;
+    margin-bottom: 5px;
+    color: var(--text);
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-bottom: 18px;
+}
+
+@media (max-width: 700px) {
+    .form-grid { grid-template-columns: 1fr; }
+}
+
+.form-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.inline-form {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.inline-form input,
+.inline-form select {
+    width: auto;
+    min-width: 150px;
+}
+
+.inline-form label {
+    margin: 0;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+/* ---------- Buttons ---------- */
+.btn {
+    display: inline-block;
+    padding: 10px 18px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: #fff;
+    color: var(--text);
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: inherit;
+    text-align: center;
+    transition: background 0.15s, border-color 0.15s;
+}
+
+.btn:hover {
+    background: var(--primary-light);
+}
+
+.btn-primary {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background: var(--primary-dark);
+    color: #fff;
+}
+
+.btn-danger {
+    background: var(--danger);
+    border-color: var(--danger);
+    color: #fff;
+}
+
+.btn-danger:hover:not(:disabled) {
+    background: #a93226;
+    color: #fff;
+}
+
+.btn-danger:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.btn-small {
+    padding: 5px 10px;
+    font-size: 13px;
+}
+
+.btn-block {
+    width: 100%;
+}
+
+/* ---------- Toolbar ---------- */
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+}
+
+.toolbar .inline-form input {
+    min-width: 260px;
+}
+
+.period-form {
+    margin-bottom: 16px;
+}
+
+/* ---------- Alerts ---------- */
+.alert {
+    padding: 12px 16px;
+    border-radius: 6px;
+    margin-bottom: 16px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.alert-success {
+    background: #e6f6ec;
+    border: 1px solid #bfe5cd;
+    color: var(--success);
+}
+
+.alert-error {
+    background: #fdecea;
+    border: 1px solid #f5c6c0;
+    color: var(--danger);
+}
+
+/* ---------- Badges ---------- */
+.badge {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.badge-admin {
+    background: var(--primary-light);
+    color: var(--primary);
+    border: 1px solid var(--primary);
+}
+
+.badge-user {
+    background: #eef2f5;
+    color: var(--text-light);
+    border: 1px solid var(--border);
+}
+
+/* ---------- Misc ---------- */
+.hint {
+    color: var(--text-light);
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.footer {
+    text-align: center;
+    padding: 18px;
+    color: var(--text-light);
+    font-size: 13px;
+}
+
+.guide-list {
+    margin: 8px 0 0 22px;
+}
+
+.guide-list li {
+    margin: 8px 0;
+}
+
+/* ---------- Auth / Login ---------- */
+.auth-body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--primary-dark), var(--primary) 60%, #2c6fae);
+    padding: 20px;
+}
+
+.login-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 32px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.login-brand {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.login-brand h1 {
+    font-size: 22px;
+    color: var(--primary-dark);
+}
+
+.login-brand p {
+    color: var(--text-light);
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+.login-logo {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 14px;
+    border-radius: 50%;
+    background: var(--primary);
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-card label {
+    margin-top: 14px;
+}
+
+.login-card .btn {
+    margin-top: 18px;
+}
+
+.login-card .hint {
+    text-align: center;
+}
+
+/* ---------- Payslip ---------- */
+.print-actions {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 16px;
+    display: flex;
+    gap: 10px;
+}
+
+.payslip {
+    max-width: 900px;
+    margin: 0 auto 40px;
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 28px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.payslip-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    border-bottom: 3px solid var(--primary);
+    padding-bottom: 16px;
+    margin-bottom: 18px;
+    flex-wrap: wrap;
+}
+
+.payslip-header h2 {
+    color: var(--primary-dark);
+}
+
+.payslip-header p {
+    color: var(--text-light);
+    font-size: 13px;
+}
+
+.payslip-logo {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: var(--primary);
+    color: #fff;
+    font-size: 26px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.payslip-period {
+    text-align: right;
+    font-size: 14px;
+}
+
+.payslip-employee {
+    margin-bottom: 18px;
+}
+
+.payslip-sections {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 24px;
+}
+
+@media (max-width: 700px) {
+    .payslip-sections { grid-template-columns: 1fr; }
+}
+
+.payslip-sections h3 {
+    color: var(--primary);
+    margin-bottom: 8px;
+    border-bottom: 2px solid var(--border);
+    padding-bottom: 6px;
+}
+
+.payslip-signatures {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    align-items: end;
+    text-align: center;
+    font-size: 13px;
+    color: var(--text-light);
+    margin-top: 40px;
+}
+
+.payslip-net {
+    border: 2px solid var(--primary);
+    border-radius: 8px;
+    padding: 14px;
+    background: var(--primary-light);
+}
+
+.payslip-net span {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.payslip-net strong {
+    font-size: 20px;
+    color: var(--primary-dark);
+}
+
+.payslip-note {
+    text-align: center;
+    color: var(--text-light);
+    font-size: 12px;
+    margin-top: 24px;
+    border-top: 1px dashed var(--border);
+    padding-top: 12px;
+}
+
+/* ---------- Print ---------- */
+@media print {
+    body {
+        background: #fff;
+        font-size: 12px;
+    }
+
+    .no-print {
+        display: none !important;
+    }
+
+    .container {
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .card,
+    .report-card {
+        border: none;
+        box-shadow: none;
+        padding: 0;
+    }
+
+    .navbar,
+    .topbar,
+    .footer,
+    .toolbar,
+    .period-form,
+    .form-card {
+        display: none !important;
+    }
+
+    .report-header {
+        text-align: center;
+        margin-bottom: 14px;
+    }
+
+    .report-header h2 {
+        font-size: 16px;
+        margin-bottom: 2px;
+    }
+
+    .report-header h3 {
+        font-size: 13px;
+        font-weight: 600;
+        margin-bottom: 8px;
+    }
+
+    .data-table th,
+    .data-table td {
+        padding: 5px 8px;
+        font-size: 11px;
+    }
+
+    .payslip {
+        box-shadow: none;
+        border: 1px solid #ccc;
+        max-width: 100%;
+    }
+}
