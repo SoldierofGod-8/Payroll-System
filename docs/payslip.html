@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payslip | Staff Payroll System</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/demo.css">
+</head>
+<body>
+<div class="print-actions no-print">
+    <a href="payroll.html" class="btn">&larr; Back to Payroll</a>
+    <button data-print class="btn btn-primary">Print Payslip</button>
+</div>
+
+<div class="payslip">
+    <div class="payslip-header">
+        <div class="payslip-logo">&#8358;</div>
+        <div>
+            <h2>Wamise Tech</h2>
+            <p>Staff Payroll System &middot; Employee Payslip</p>
+        </div>
+        <div class="payslip-period">
+            <strong>Pay Period</strong><br>
+            August 2026
+        </div>
+    </div>
+
+    <div class="payslip-employee">
+        <table class="data-table">
+            <tbody>
+                <tr>
+                    <td><strong>Employee Name:</strong> Adebayo Johnson</td>
+                    <td><strong>Staff ID:</strong> STF001</td>
+                </tr>
+                <tr>
+                    <td><strong>Department:</strong> Administration</td>
+                    <td><strong>Position:</strong> Administrative Manager</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="payslip-sections">
+        <div class="payslip-col">
+            <h3>Earnings</h3>
+            <table class="data-table">
+                <tbody>
+                    <tr><td>Basic Salary</td><td class="align-right">&#8358;300,000.00</td></tr>
+                    <tr><td>Housing Allowance</td><td class="align-right">&#8358;45,000.00</td></tr>
+                    <tr><td>Transport Allowance</td><td class="align-right">&#8358;20,000.00</td></tr>
+                    <tr><td>Medical Allowance</td><td class="align-right">&#8358;15,000.00</td></tr>
+                    <tr><td>Utility Allowance</td><td class="align-right">&#8358;10,000.00</td></tr>
+                    <tr><td>Other Allowance</td><td class="align-right">&#8358;5,000.00</td></tr>
+                    <tr class="total-row"><td><strong>Total Allowance</strong></td><td class="align-right"><strong>&#8358;95,000.00</strong></td></tr>
+                    <tr class="total-row"><td><strong>Gross Salary</strong></td><td class="align-right"><strong>&#8358;395,000.00</strong></td></tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="payslip-col">
+            <h3>Deductions</h3>
+            <table class="data-table">
+                <tbody>
+                    <tr><td>Tax</td><td class="align-right">&#8358;20,000.00</td></tr>
+                    <tr><td>Pension</td><td class="align-right">&#8358;18,000.00</td></tr>
+                    <tr><td>Loan Repayment</td><td class="align-right">&#8358;10,000.00</td></tr>
+                    <tr><td>Cooperative Contribution</td><td class="align-right">&#8358;5,000.00</td></tr>
+                    <tr><td>Other Deduction</td><td class="align-right">&#8358;2,000.00</td></tr>
+                    <tr class="total-row"><td><strong>Total Deductions</strong></td><td class="align-right"><strong>&#8358;55,000.00</strong></td></tr>
+                    <tr class="total-row"><td><strong>Net Salary</strong></td><td class="align-right"><strong>&#8358;340,000.00</strong></td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="payslip-signatures">
+        <div>
+            <p>_________________________________</p>
+            <p>Prepared By (Payroll Officer)</p>
+        </div>
+        <div>
+            <p>_________________________________</p>
+            <p>Approved By (Management)</p>
+        </div>
+        <div class="payslip-net">
+            <span>NET PAY</span>
+            <strong>&#8358;340,000.00</strong>
+        </div>
+    </div>
+
+    <p class="payslip-note">This is a computer-generated payslip and does not require a physical signature.</p>
+</div>
+<script src="assets/js/demo.js"></script>
+</body>
+</html>

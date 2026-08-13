@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reports | Staff Payroll System</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/demo.css">
+</head>
+<body>
+    <div class="demo-banner">Static demo preview &middot; <a href="index.html">View the landing page</a></div>
+    <header class="topbar no-print">
+        <div class="topbar-inner">
+            <div class="brand">Staff Payroll System</div>
+            <div class="user-box">
+                <span class="user-name">admin (Admin)</span>
+                <a href="login.html" class="btn btn-small btn-danger">Logout</a>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar no-print">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="employees.html">Employees</a>
+        <a href="departments.html">Departments</a>
+        <a href="allowances.html">Allowances</a>
+        <a href="deductions.html">Deductions</a>
+        <a href="payroll.html">Payroll</a>
+        <a href="reports.html">Reports</a>
+        <a href="guide.html">Guide</a>
+        <a href="users.html">Users</a>
+        <a href="backup.html">Backup</a>
+    </nav>
+
+    <main class="container">
+        <h1 class="page-title">Payroll Reports</h1>
+
+        <div class="card form-card">
+            <form class="inline-form" onsubmit="return false;">
+                <label>Report:
+                    <select>
+                        <option>Monthly Payroll Report</option>
+                        <option>Staff Payroll Report</option>
+                        <option>Department Salary Summary</option>
+                        <option>Employee List</option>
+                    </select>
+                </label>
+                <label>Month:
+                    <select>
+                        <option>January</option><option>February</option><option>March</option>
+                        <option>April</option><option>May</option><option>June</option>
+                        <option>July</option><option selected>August</option><option>September</option>
+                        <option>October</option><option>November</option><option>December</option>
+                    </select>
+                </label>
+                <label>Year:
+                    <select>
+                        <option>2025</option><option selected>2026</option><option>2027</option>
+                    </select>
+                </label>
+                <button type="submit" class="btn btn-primary">Generate Report</button>
+            </form>
+        </div>
+
+        <div class="toolbar no-print">
+            <button data-print class="btn">Print Report</button>
+        </div>
+
+        <div class="card report-card">
+            <div class="report-header">
+                <h2>Wamise Tech</h2>
+                <h3>Monthly Payroll Report &mdash; August 2026</h3>
+            </div>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Staff ID</th>
+                        <th>Employee</th>
+                        <th>Department</th>
+                        <th class="align-right">Gross</th>
+                        <th class="align-right">Deductions</th>
+                        <th class="align-right">Net Salary</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td><td>STF001</td><td>Adebayo Johnson</td><td>Administration</td>
+                        <td class="align-right">&#8358;395,000.00</td><td class="align-right">&#8358;55,000.00</td>
+                        <td class="align-right">&#8358;340,000.00</td>
+                    </tr>
+                    <tr>
+                        <td>2</td><td>STF002</td><td>Fatima Bello</td><td>Finance</td>
+                        <td class="align-right">&#8358;325,000.00</td><td class="align-right">&#8358;48,000.00</td>
+                        <td class="align-right">&#8358;277,000.00</td>
+                    </tr>
+                    <tr>
+                        <td>3</td><td>STF003</td><td>Emeka Obi</td><td>Information Technology</td>
+                        <td class="align-right">&#8358;290,000.00</td><td class="align-right">&#8358;42,000.00</td>
+                        <td class="align-right">&#8358;248,000.00</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr class="total-row">
+                        <td colspan="4">TOTAL (3 of 42 staff shown)</td>
+                        <td class="align-right">&#8358;1,010,000.00</td>
+                        <td class="align-right">&#8358;145,000.00</td>
+                        <td class="align-right">&#8358;865,000.00</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </main>
+
+    <footer class="footer no-print">
+        <p>Wamise Tech &middot; Staff Payroll System &middot; Static demo preview</p>
+    </footer>
+    <script src="assets/js/demo.js"></script>
+</body>
+</html>

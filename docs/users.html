@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users | Staff Payroll System</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/demo.css">
+</head>
+<body>
+    <div class="demo-banner">Static demo preview &middot; <a href="index.html">View the landing page</a></div>
+    <header class="topbar no-print">
+        <div class="topbar-inner">
+            <div class="brand">Staff Payroll System</div>
+            <div class="user-box">
+                <span class="user-name">admin (Admin)</span>
+                <a href="login.html" class="btn btn-small btn-danger">Logout</a>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar no-print">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="employees.html">Employees</a>
+        <a href="departments.html">Departments</a>
+        <a href="allowances.html">Allowances</a>
+        <a href="deductions.html">Deductions</a>
+        <a href="payroll.html">Payroll</a>
+        <a href="reports.html">Reports</a>
+        <a href="guide.html">Guide</a>
+        <a href="users.html">Users</a>
+        <a href="backup.html">Backup</a>
+    </nav>
+
+    <main class="container">
+        <h1 class="page-title">User Management</h1>
+
+        <div class="card form-card">
+            <h3>Add New User</h3>
+            <form class="inline-form" onsubmit="return false;">
+                <input type="text" placeholder="Username" required>
+                <input type="password" placeholder="Password" required>
+                <select>
+                    <option value="User">User</option>
+                    <option value="Admin">Admin</option>
+                </select>
+                <button type="submit" class="btn btn-primary">Add User</button>
+            </form>
+        </div>
+
+        <div class="card">
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Username</th>
+                        <th>User Type</th>
+                        <th>Created</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>1</td><td>admin <small>(you)</small></td><td><span class="badge badge-admin">Admin</span></td><td>13 Aug 2026</td></tr>
+                    <tr><td>2</td><td>payroll_officer</td><td><span class="badge badge-user">User</span></td><td>13 Aug 2026</td></tr>
+                    <tr><td>3</td><td>hr_manager</td><td><span class="badge badge-user">User</span></td><td>12 Aug 2026</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer class="footer no-print">
+        <p>Wamise Tech &middot; Staff Payroll System &middot; Static demo preview</p>
+    </footer>
+    <script src="assets/js/demo.js"></script>
+</body>
+</html>

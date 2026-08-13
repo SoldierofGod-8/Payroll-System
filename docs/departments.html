@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Departments | Staff Payroll System</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/demo.css">
+</head>
+<body>
+    <div class="demo-banner">Static demo preview &middot; <a href="index.html">View the landing page</a></div>
+    <header class="topbar no-print">
+        <div class="topbar-inner">
+            <div class="brand">Staff Payroll System</div>
+            <div class="user-box">
+                <span class="user-name">admin (Admin)</span>
+                <a href="login.html" class="btn btn-small btn-danger">Logout</a>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar no-print">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="employees.html">Employees</a>
+        <a href="departments.html">Departments</a>
+        <a href="allowances.html">Allowances</a>
+        <a href="deductions.html">Deductions</a>
+        <a href="payroll.html">Payroll</a>
+        <a href="reports.html">Reports</a>
+        <a href="guide.html">Guide</a>
+        <a href="users.html">Users</a>
+        <a href="backup.html">Backup</a>
+    </nav>
+
+    <main class="container">
+        <h1 class="page-title">Department Management</h1>
+
+        <div class="card form-card">
+            <h3>Add New Department</h3>
+            <form class="inline-form" onsubmit="return false;">
+                <input type="text" placeholder="Department name" required>
+                <button type="submit" class="btn btn-primary">Add Department</button>
+            </form>
+        </div>
+
+        <div class="card">
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Department</th>
+                        <th class="align-center">Staff Count</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>1</td><td>Administration</td><td class="align-center">6</td></tr>
+                    <tr><td>2</td><td>Finance</td><td class="align-center">8</td></tr>
+                    <tr><td>3</td><td>Human Resources</td><td class="align-center">7</td></tr>
+                    <tr><td>4</td><td>Information Technology</td><td class="align-center">14</td></tr>
+                    <tr><td>5</td><td>Operations</td><td class="align-center">7</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer class="footer no-print">
+        <p>Wamise Tech &middot; Staff Payroll System &middot; Static demo preview</p>
+    </footer>
+    <script src="assets/js/demo.js"></script>
+</body>
+</html>

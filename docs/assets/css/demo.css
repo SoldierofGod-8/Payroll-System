@@ -1,0 +1,157 @@
+/* Demo-specific styles for the GitHub Pages static preview */
+
+/* Landing page */
+.landing-hero {
+    background: linear-gradient(135deg, var(--primary-dark), var(--primary) 60%, #2c6fae);
+    color: #fff;
+    text-align: center;
+    padding: 70px 20px 60px;
+}
+
+.landing-hero .hero-badge {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 20px;
+    padding: 6px 16px;
+    font-size: 13px;
+    margin-bottom: 18px;
+}
+
+.landing-hero h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.landing-hero p {
+    font-size: 17px;
+    opacity: 0.92;
+    max-width: 640px;
+    margin: 0 auto 26px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 14px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hero-buttons .btn {
+    padding: 13px 26px;
+    font-size: 15px;
+}
+
+.btn-github {
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.btn-github:hover {
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
+}
+
+.demo-note {
+    background: #fff8e6;
+    border: 1px solid #f0d98c;
+    color: #7a5b00;
+    border-radius: 8px;
+    padding: 12px 16px;
+    font-size: 14px;
+    margin: 20px 0;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-top: 24px;
+}
+
+@media (max-width: 900px) {
+    .feature-grid { grid-template-columns: 1fr; }
+}
+
+.feature-item {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 18px;
+}
+
+.feature-item h4 {
+    color: var(--primary);
+    margin-bottom: 6px;
+}
+
+.feature-item p {
+    color: var(--text-light);
+    font-size: 14px;
+}
+
+.demo-steps {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-top: 20px;
+}
+
+@media (max-width: 900px) {
+    .demo-steps { grid-template-columns: repeat(2, 1fr); }
+}
+
+.demo-step {
+    text-align: center;
+    padding: 18px;
+    background: var(--primary-light);
+    border-radius: var(--radius);
+}
+
+.demo-step .step-num {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: var(--primary);
+    color: #fff;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.demo-step p {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--primary-dark);
+}
+
+/* Landing footer */
+.landing-footer {
+    background: var(--primary-dark);
+    color: #fff;
+    text-align: center;
+    padding: 26px 16px;
+    font-size: 14px;
+}
+
+/* Demo banner strip */
+.demo-banner {
+    background: #2c6fae;
+    color: #fff;
+    text-align: center;
+    padding: 8px 12px;
+    font-size: 13px;
+}
+
+.demo-banner a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Stat cards on demo dashboard */
+.stat-card .stat-value.small {
+    font-size: 18px;
+}

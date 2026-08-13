@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employees | Staff Payroll System</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/demo.css">
+</head>
+<body>
+    <div class="demo-banner">Static demo preview &middot; <a href="index.html">View the landing page</a></div>
+    <header class="topbar no-print">
+        <div class="topbar-inner">
+            <div class="brand">Staff Payroll System</div>
+            <div class="user-box">
+                <span class="user-name">admin (Admin)</span>
+                <a href="login.html" class="btn btn-small btn-danger">Logout</a>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar no-print">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="employees.html">Employees</a>
+        <a href="departments.html">Departments</a>
+        <a href="allowances.html">Allowances</a>
+        <a href="deductions.html">Deductions</a>
+        <a href="payroll.html">Payroll</a>
+        <a href="reports.html">Reports</a>
+        <a href="guide.html">Guide</a>
+        <a href="users.html">Users</a>
+        <a href="backup.html">Backup</a>
+    </nav>
+
+    <main class="container">
+        <h1 class="page-title">Employee Records</h1>
+
+        <div class="toolbar">
+            <a href="employees.html" class="btn btn-primary">+ Add Employee</a>
+            <form class="inline-form" onsubmit="return false;">
+                <input type="text" placeholder="Search name, staff ID or position...">
+                <button type="submit" class="btn btn-small">Search</button>
+            </form>
+        </div>
+
+        <div class="card">
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Staff ID</th>
+                        <th>Full Name</th>
+                        <th>Gender</th>
+                        <th>Department</th>
+                        <th>Position</th>
+                        <th>Phone</th>
+                        <th class="align-right">Basic Salary</th>
+                        <th class="no-print">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>STF001</td>
+                        <td>Adebayo Johnson</td>
+                        <td>Male</td>
+                        <td>Administration</td>
+                        <td>Administrative Manager</td>
+                        <td>08012345678</td>
+                        <td class="align-right">&#8358;300,000.00</td>
+                        <td class="no-print actions">
+                            <a class="btn btn-small" href="employees.html">Edit</a>
+                            <span class="btn btn-small btn-danger" style="opacity:.6;">Delete</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>STF002</td>
+                        <td>Fatima Bello</td>
+                        <td>Female</td>
+                        <td>Finance</td>
+                        <td>Accountant</td>
+                        <td>08023456789</td>
+                        <td class="align-right">&#8358;250,000.00</td>
+                        <td class="no-print actions">
+                            <a class="btn btn-small" href="employees.html">Edit</a>
+                            <span class="btn btn-small btn-danger" style="opacity:.6;">Delete</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>STF003</td>
+                        <td>Emeka Obi</td>
+                        <td>Male</td>
+                        <td>Information Technology</td>
+                        <td>Software Developer</td>
+                        <td>08034567890</td>
+                        <td class="align-right">&#8358;220,000.00</td>
+                        <td class="no-print actions">
+                            <a class="btn btn-small" href="employees.html">Edit</a>
+                            <span class="btn btn-small btn-danger" style="opacity:.6;">Delete</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>STF004</td>
+                        <td>Ngozi Uche</td>
+                        <td>Female</td>
+                        <td>Human Resources</td>
+                        <td>HR Officer</td>
+                        <td>08045678901</td>
+                        <td class="align-right">&#8358;180,000.00</td>
+                        <td class="no-print actions">
+                            <a class="btn btn-small" href="employees.html">Edit</a>
+                            <span class="btn btn-small btn-danger" style="opacity:.6;">Delete</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer class="footer no-print">
+        <p>Wamise Tech &middot; Staff Payroll System &middot; Static demo preview</p>
+    </footer>
+    <script src="assets/js/demo.js"></script>
+</body>
+</html>

@@ -4,6 +4,16 @@
 
 A web-based payroll management application built with **PHP**, **MySQL**, **HTML**, **CSS** and **JavaScript**. It automates employee registration, salary computation, allowance and deduction management, payroll processing, payslip generation and payroll reporting.
 
+## Live Demo
+
+A static preview of the application interface is hosted on GitHub Pages:
+
+**https://soldierofgod-8.github.io/Payroll-System/**
+
+Demo credentials (login page): `admin` / `admin123`
+
+> GitHub Pages only serves static files, so this is a UI preview. The full **PHP + MySQL** system runs locally with XAMPP (see Installation below) or any PHP-capable web host.
+
 ## Features
 
 - User authentication and role-based access (Admin / User)

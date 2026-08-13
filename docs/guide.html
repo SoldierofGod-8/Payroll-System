@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Guide | Staff Payroll System</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/demo.css">
+</head>
+<body>
+    <div class="demo-banner">Static demo preview &middot; <a href="index.html">View the landing page</a></div>
+    <header class="topbar no-print">
+        <div class="topbar-inner">
+            <div class="brand">Staff Payroll System</div>
+            <div class="user-box">
+                <span class="user-name">admin (Admin)</span>
+                <a href="login.html" class="btn btn-small btn-danger">Logout</a>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar no-print">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="employees.html">Employees</a>
+        <a href="departments.html">Departments</a>
+        <a href="allowances.html">Allowances</a>
+        <a href="deductions.html">Deductions</a>
+        <a href="payroll.html">Payroll</a>
+        <a href="reports.html">Reports</a>
+        <a href="guide.html">Guide</a>
+        <a href="users.html">Users</a>
+        <a href="backup.html">Backup</a>
+    </nav>
+
+    <main class="container">
+        <h1 class="page-title">User Guide</h1>
+
+        <div class="card">
+            <div class="card-header"><h3>Getting Started</h3></div>
+            <ol class="guide-list">
+                <li><strong>Login</strong> &mdash; Enter your username and password on the login page. Only authorised users can access the system.</li>
+                <li><strong>Add Departments</strong> &mdash; Visit the Departments page to create departments before registering staff.</li>
+                <li><strong>Register Employees</strong> &mdash; Use the Employees page to add staff records (Staff ID, name, gender, department, position, phone, basic salary).</li>
+                <li><strong>Set Allowances</strong> &mdash; Enter housing, transport, medical, utility and other allowances for each employee.</li>
+                <li><strong>Set Deductions</strong> &mdash; Enter tax, pension, loan, cooperative and other deductions for each employee.</li>
+                <li><strong>Run Payroll</strong> &mdash; Choose a month and year, then click <em>Run Payroll</em>. Gross and net salary are computed automatically.</li>
+                <li><strong>Print Payslips</strong> &mdash; From the payroll table, click <em>Payslip</em> to view or print an employee's payslip.</li>
+                <li><strong>View Reports</strong> &mdash; Use the Reports page for the monthly payroll report, staff payroll history, department summary and employee list.</li>
+                <li><strong>Backup Data</strong> &mdash; Administrators can download a database backup from the Backup page.</li>
+            </ol>
+        </div>
+
+        <div class="grid-2">
+            <div class="card">
+                <div class="card-header"><h3>Navigation Map</h3></div>
+                <table class="data-table">
+                    <thead>
+                        <tr><th>Menu</th><th>What it does</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><strong>Dashboard</strong></td><td>System overview, employee count and monthly salary summary.</td></tr>
+                        <tr><td><strong>Employees</strong></td><td>Add, edit, search and delete employee records.</td></tr>
+                        <tr><td><strong>Departments</strong></td><td>Add, rename and delete departments.</td></tr>
+                        <tr><td><strong>Allowances</strong></td><td>Set housing, transport, medical, utility and other allowances per staff.</td></tr>
+                        <tr><td><strong>Deductions</strong></td><td>Set tax, pension, loan, cooperative and other deductions per staff.</td></tr>
+                        <tr><td><strong>Payroll</strong></td><td>Compute gross and net salary for any month, view records, generate payslips.</td></tr>
+                        <tr><td><strong>Reports</strong></td><td>Monthly payroll report, staff payroll report, department summary and employee list.</td></tr>
+                        <tr><td><strong>Users</strong> (Admin)</td><td>Create and manage system login accounts.</td></tr>
+                        <tr><td><strong>Backup</strong> (Admin)</td><td>Download a database backup file.</td></tr>
+                        <tr><td><strong>Logout</strong></td><td>End your session securely.</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="card">
+                <div class="card-header"><h3>How Salary is Calculated</h3></div>
+                <table class="data-table">
+                    <tbody>
+                        <tr>
+                            <td>Gross Salary</td>
+                            <td>= Basic Salary + Total Allowances</td>
+                        </tr>
+                        <tr>
+                            <td>Total Deductions</td>
+                            <td>= Tax + Pension + Loan + Cooperative + Other</td>
+                        </tr>
+                        <tr class="total-row">
+                            <td><strong>Net Salary</strong></td>
+                            <td><strong>= Gross Salary &minus; Total Deductions</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h3 style="margin-top:1.5rem;">Workflow</h3>
+                <p class="hint">Register staff &rarr; set allowances &rarr; set deductions &rarr; run monthly payroll &rarr; print payslips &rarr; generate reports.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer no-print">
+        <p>Wamise Tech &middot; Staff Payroll System &middot; Static demo preview</p>
+    </footer>
+    <script src="assets/js/demo.js"></script>
+</body>
+</html>
